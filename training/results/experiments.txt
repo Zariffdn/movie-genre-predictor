@@ -1,0 +1,20 @@
+Validation macro-F1 (thresholds tuned on validation unless marked 'at 0.5')
+1. class_weight and C (20k words)
+   class_weight=None      C=0.5   tuned 0.6044   at 0.5 0.3518
+   class_weight=None      C=1.0   tuned 0.6102   at 0.5 0.4376
+   class_weight=None      C=2.0   tuned 0.6151   at 0.5 0.4916
+   class_weight=None      C=4.0   tuned 0.6109   at 0.5 0.5247
+   class_weight=None      C=8.0   tuned 0.6027   at 0.5 0.5319
+   class_weight=balanced  C=0.5   tuned 0.6128   at 0.5 0.5861
+   class_weight=balanced  C=1.0   tuned 0.6149   at 0.5 0.5901
+   class_weight=balanced  C=2.0   tuned 0.6132   at 0.5 0.5945
+   class_weight=balanced  C=4.0   tuned 0.6081   at 0.5 0.5978
+   class_weight=balanced  C=8.0   tuned 0.6012   at 0.5 0.5922
+2. vocabulary size (C=1, balanced)
+     5000 words  tuned 0.5998
+    10000 words  tuned 0.6093
+    20000 words  tuned 0.6149
+    31633 words  tuned 0.6166
+3. word pairs (C=1, balanced)
+   words + pairs,  40000 features  tuned 0.6125
+   words + pairs, 100000 features  tuned 0.6145

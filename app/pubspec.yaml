@@ -1,0 +1,23 @@
+name: movie_genre_predictor
+description: "Predicts movie genres from a plot summary, entirely on the device."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+# No runtime packages beyond Flutter itself: the model is plain Dart.
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    # Written by training/train.py.
+    - assets/model.json

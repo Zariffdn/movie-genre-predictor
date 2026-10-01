@@ -1,0 +1,15 @@
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+
+# The corpus: about 130 MB unpacked, plus the 46 MB archive.
+# Fetch it with training/download_data.py.
+training/data/
+
+# train.py's staging copy of the model, which only exists while it runs
+app/assets/*.tmp
+
+# Editors
+.vscode/
+.idea/

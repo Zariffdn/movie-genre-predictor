@@ -1,0 +1,24 @@
+{
+  "about": "Inputs and the tokens both tokenizers must produce. Checked by training/tests/test_tokenizer.py and app/test/tokenizer_test.dart. Non-ASCII characters are stored as \\u escapes, so look-alikes such as the Kelvin sign can't pass for ASCII letters in an editor.",
+  "cases": [
+    {"note": "hyphen, apostrophe and digits split words", "text": "Spider-Man's 2nd fight!", "tokens": ["spider", "man", "nd", "fight"]},
+    {"note": "empty text", "text": "", "tokens": []},
+    {"note": "one-letter words are dropped", "text": "I am a cat", "tokens": ["am", "cat"]},
+    {"note": "ASCII capitals are lowercased", "text": "HELLO World", "tokens": ["hello", "world"]},
+    {"note": "contraction", "text": "don't stop", "tokens": ["don", "stop"]},
+    {"note": "hyphenated words", "text": "well-known e-mail", "tokens": ["well", "known", "mail"]},
+    {"note": "tabs and Windows/Unix newlines", "text": "tabs\tand\nnew\r\nlines", "tokens": ["tabs", "and", "new", "lines"]},
+    {"note": "letters mixed with digits", "text": "R2-D2 and C-3PO", "tokens": ["and", "po"]},
+    {"note": "underscore separates, camelCase does not", "text": "snake_case and camelCase", "tokens": ["snake", "case", "and", "camelcase"]},
+    {"note": "accented letter splits a word", "text": "caf\u00e9 au lait", "tokens": ["caf", "au", "lait"]},
+    {"note": "diaeresis and cedilla", "text": "na\u00efve fa\u00e7ade", "tokens": ["na", "ve", "fa", "ade"]},
+    {"note": "German sharp s", "text": "stra\u00dfe", "tokens": ["stra"]},
+    {"note": "Turkish dotted capital I is not lowercased to i", "text": "\u0130stanbul", "tokens": ["stanbul"]},
+    {"note": "Kelvin sign is not lowercased to k", "text": "\u212aelvin", "tokens": ["elvin"]},
+    {"note": "full-width letters are not ASCII", "text": "\uff26\uff55\uff4c\uff4c letters", "tokens": ["letters"]},
+    {"note": "emoji (a surrogate pair in Dart)", "text": "emoji \ud83c\udfac between", "tokens": ["emoji", "between"]},
+    {"note": "Greek letters are ignored", "text": "\u0391\u0392\u0393 Greek", "tokens": ["greek"]},
+    {"note": "digits break a run of letters", "text": "x1y2zz", "tokens": ["zz"]},
+    {"note": "punctuation at the end", "text": "The END.", "tokens": ["the", "end"]}
+  ]
+}

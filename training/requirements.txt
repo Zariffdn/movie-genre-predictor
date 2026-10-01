@@ -1,0 +1,19 @@
+# Python 3.12. Every package is pinned (from `pip freeze`), so a fresh
+# environment gets exactly the versions the published results came from.
+
+# Used directly by this project
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+pytest==9.1.1
+
+# Installed by the packages above
+cloudpickle==3.1.2
+colorama==0.4.6; sys_platform == "win32"
+iniconfig==2.3.0
+joblib==1.6.0
+narwhals==2.26.0
+packaging==26.3
+pluggy==1.6.0
+Pygments==2.21.0
+threadpoolctl==3.7.0

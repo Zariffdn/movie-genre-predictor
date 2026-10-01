@@ -1,0 +1,391 @@
+{
+  "data": {
+    "movies": 38397,
+    "train": 26877,
+    "validation": 5760,
+    "test": 5760,
+    "vocabulary": 20000,
+    "seed": 42
+  },
+  "c_search": [
+    {
+      "C": 0.25,
+      "val_macro_f1": 0.606576
+    },
+    {
+      "C": 0.5,
+      "val_macro_f1": 0.612843
+    },
+    {
+      "C": 1.0,
+      "val_macro_f1": 0.614914
+    },
+    {
+      "C": 2.0,
+      "val_macro_f1": 0.613208
+    },
+    {
+      "C": 4.0,
+      "val_macro_f1": 0.608067
+    },
+    {
+      "C": 8.0,
+      "val_macro_f1": 0.601223
+    }
+  ],
+  "chosen_C": 1.0,
+  "thresholds": {
+    "Action": 0.55,
+    "Adventure": 0.56,
+    "Comedy": 0.48,
+    "Crime": 0.57,
+    "Drama": 0.39,
+    "Family": 0.65,
+    "Fantasy": 0.66,
+    "Horror": 0.62,
+    "Musical": 0.66,
+    "Mystery": 0.69,
+    "Romance": 0.47,
+    "Science Fiction": 0.58,
+    "Thriller": 0.5,
+    "War": 0.72,
+    "Western": 0.65
+  },
+  "test": {
+    "per_genre": {
+      "Action": {
+        "precision": 0.576744,
+        "recall": 0.72093,
+        "f1": 0.640827,
+        "support": 1032
+      },
+      "Adventure": {
+        "precision": 0.530472,
+        "recall": 0.660256,
+        "f1": 0.588291,
+        "support": 936
+      },
+      "Comedy": {
+        "precision": 0.604264,
+        "recall": 0.740721,
+        "f1": 0.665571,
+        "support": 1913
+      },
+      "Crime": {
+        "precision": 0.515464,
+        "recall": 0.643501,
+        "f1": 0.57241,
+        "support": 777
+      },
+      "Drama": {
+        "precision": 0.700027,
+        "recall": 0.870285,
+        "f1": 0.775926,
+        "support": 3022
+      },
+      "Family": {
+        "precision": 0.631683,
+        "recall": 0.603025,
+        "f1": 0.617021,
+        "support": 529
+      },
+      "Fantasy": {
+        "precision": 0.434018,
+        "recall": 0.426513,
+        "f1": 0.430233,
+        "support": 347
+      },
+      "Horror": {
+        "precision": 0.740741,
+        "recall": 0.754098,
+        "f1": 0.74736,
+        "support": 610
+      },
+      "Musical": {
+        "precision": 0.367246,
+        "recall": 0.388451,
+        "f1": 0.377551,
+        "support": 381
+      },
+      "Mystery": {
+        "precision": 0.40303,
+        "recall": 0.443333,
+        "f1": 0.422222,
+        "support": 300
+      },
+      "Romance": {
+        "precision": 0.467927,
+        "recall": 0.721094,
+        "f1": 0.567558,
+        "support": 1133
+      },
+      "Science Fiction": {
+        "precision": 0.59434,
+        "recall": 0.734694,
+        "f1": 0.657106,
+        "support": 343
+      },
+      "Thriller": {
+        "precision": 0.496833,
+        "recall": 0.676894,
+        "f1": 0.573052,
+        "support": 1043
+      },
+      "War": {
+        "precision": 0.546125,
+        "recall": 0.637931,
+        "f1": 0.588469,
+        "support": 232
+      },
+      "Western": {
+        "precision": 0.774648,
+        "recall": 0.718954,
+        "f1": 0.745763,
+        "support": 153
+      }
+    },
+    "micro": {
+      "precision": 0.581654,
+      "recall": 0.717591,
+      "f1": 0.642511
+    },
+    "macro": {
+      "precision": 0.558904,
+      "recall": 0.649379,
+      "f1": 0.597957
+    },
+    "samples_f1": 0.63064,
+    "exact_match": 0.170486,
+    "share_with_no_genre_predicted": 0.00711806,
+    "micro_f1_95ci": [
+      0.635966,
+      0.649211
+    ],
+    "macro_f1_95ci": [
+      0.58799,
+      0.607536
+    ]
+  },
+  "test_baselines": {
+    "same_model_threshold_0.5": {
+      "per_genre": {
+        "Action": {
+          "precision": 0.542385,
+          "recall": 0.762597,
+          "f1": 0.633911,
+          "support": 1032
+        },
+        "Adventure": {
+          "precision": 0.494876,
+          "recall": 0.722222,
+          "f1": 0.587315,
+          "support": 936
+        },
+        "Comedy": {
+          "precision": 0.619521,
+          "recall": 0.716675,
+          "f1": 0.664566,
+          "support": 1913
+        },
+        "Crime": {
+          "precision": 0.480786,
+          "recall": 0.724582,
+          "f1": 0.578029,
+          "support": 777
+        },
+        "Drama": {
+          "precision": 0.760658,
+          "recall": 0.749835,
+          "f1": 0.755207,
+          "support": 3022
+        },
+        "Family": {
+          "precision": 0.475348,
+          "recall": 0.710775,
+          "f1": 0.569697,
+          "support": 529
+        },
+        "Fantasy": {
+          "precision": 0.363481,
+          "recall": 0.613833,
+          "f1": 0.456592,
+          "support": 347
+        },
+        "Horror": {
+          "precision": 0.646692,
+          "recall": 0.84918,
+          "f1": 0.734231,
+          "support": 610
+        },
+        "Musical": {
+          "precision": 0.288435,
+          "recall": 0.55643,
+          "f1": 0.379928,
+          "support": 381
+        },
+        "Mystery": {
+          "precision": 0.288786,
+          "recall": 0.626667,
+          "f1": 0.395373,
+          "support": 300
+        },
+        "Romance": {
+          "precision": 0.48582,
+          "recall": 0.695499,
+          "f1": 0.572051,
+          "support": 1133
+        },
+        "Science Fiction": {
+          "precision": 0.546012,
+          "recall": 0.778426,
+          "f1": 0.641827,
+          "support": 343
+        },
+        "Thriller": {
+          "precision": 0.496833,
+          "recall": 0.676894,
+          "f1": 0.573052,
+          "support": 1043
+        },
+        "War": {
+          "precision": 0.472727,
+          "recall": 0.784483,
+          "f1": 0.589951,
+          "support": 232
+        },
+        "Western": {
+          "precision": 0.607143,
+          "recall": 0.777778,
+          "f1": 0.681948,
+          "support": 153
+        }
+      },
+      "micro": {
+        "precision": 0.547666,
+        "recall": 0.724022,
+        "f1": 0.623615
+      },
+      "macro": {
+        "precision": 0.504634,
+        "recall": 0.716392,
+        "f1": 0.587579
+      },
+      "samples_f1": 0.610256,
+      "exact_match": 0.145313,
+      "share_with_no_genre_predicted": 0.0109375
+    },
+    "always_predict_every_genre": {
+      "per_genre": {
+        "Action": {
+          "precision": 0.179167,
+          "recall": 1.0,
+          "f1": 0.303887,
+          "support": 1032
+        },
+        "Adventure": {
+          "precision": 0.1625,
+          "recall": 1.0,
+          "f1": 0.27957,
+          "support": 936
+        },
+        "Comedy": {
+          "precision": 0.332118,
+          "recall": 1.0,
+          "f1": 0.498632,
+          "support": 1913
+        },
+        "Crime": {
+          "precision": 0.134896,
+          "recall": 1.0,
+          "f1": 0.237724,
+          "support": 777
+        },
+        "Drama": {
+          "precision": 0.524653,
+          "recall": 1.0,
+          "f1": 0.688226,
+          "support": 3022
+        },
+        "Family": {
+          "precision": 0.0918403,
+          "recall": 1.0,
+          "f1": 0.16823,
+          "support": 529
+        },
+        "Fantasy": {
+          "precision": 0.0602431,
+          "recall": 1.0,
+          "f1": 0.11364,
+          "support": 347
+        },
+        "Horror": {
+          "precision": 0.105903,
+          "recall": 1.0,
+          "f1": 0.191523,
+          "support": 610
+        },
+        "Musical": {
+          "precision": 0.0661458,
+          "recall": 1.0,
+          "f1": 0.124084,
+          "support": 381
+        },
+        "Mystery": {
+          "precision": 0.0520833,
+          "recall": 1.0,
+          "f1": 0.0990099,
+          "support": 300
+        },
+        "Romance": {
+          "precision": 0.196701,
+          "recall": 1.0,
+          "f1": 0.328739,
+          "support": 1133
+        },
+        "Science Fiction": {
+          "precision": 0.0595486,
+          "recall": 1.0,
+          "f1": 0.112404,
+          "support": 343
+        },
+        "Thriller": {
+          "precision": 0.181076,
+          "recall": 1.0,
+          "f1": 0.306629,
+          "support": 1043
+        },
+        "War": {
+          "precision": 0.0402778,
+          "recall": 1.0,
+          "f1": 0.0774366,
+          "support": 232
+        },
+        "Western": {
+          "precision": 0.0265625,
+          "recall": 1.0,
+          "f1": 0.0517504,
+          "support": 153
+        }
+      },
+      "micro": {
+        "precision": 0.147581,
+        "recall": 1.0,
+        "f1": 0.257204
+      },
+      "macro": {
+        "precision": 0.147581,
+        "recall": 1.0,
+        "f1": 0.238766
+      },
+      "samples_f1": 0.249122,
+      "exact_match": 0.0,
+      "share_with_no_genre_predicted": 0.0
+    }
+  },
+  "export_check": {
+    "max_probability_difference": 4.1068e-08,
+    "decisions_checked": 86400,
+    "decisions_that_differ": 0
+  },
+  "model_file_bytes": 3539607
+}
