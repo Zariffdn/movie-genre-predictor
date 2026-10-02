@@ -68,11 +68,13 @@ class AboutPage extends StatelessWidget {
               body: 'Trained on the CMU Movie Summary Corpus by David Bamman, '
                   'Brendan O\'Connor and Noah A. Smith, "Learning Latent Personas of '
                   'Film Characters", ACL 2013. The plot summaries come from Wikipedia. '
-                  'The corpus is released under a Creative Commons Attribution-ShareAlike '
-                  'licence, and the model file in this app is derived from it and shared '
-                  'under the same licence.',
+                  'The corpus is released under the Creative Commons Attribution-ShareAlike '
+                  '3.0 United States licence, and the model file in this app is derived '
+                  'from it and shared under the same licence.',
             ),
             const SelectableText('https://www.cs.cmu.edu/~ark/personas/'),
+            const SizedBox(height: 8),
+            const SelectableText('https://creativecommons.org/licenses/by-sa/3.0/us/'),
           ],
         ),
       ),
